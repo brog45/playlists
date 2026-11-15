@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Outage v1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style>
+        /* dark-mode style embedded to avoid blinding FOUC */
+        @media (prefers-color-scheme: dark) {
+            html {
+                background-color: black;
+            }
+            body {
+                filter: invert(90%) brightness(75%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Outage v1</h1>
+
+    <p>
+        <em>The five stages of grief, as experienced by an on-call engineer during
+        a major outage.</em><br />
+        Inspired by the M365 outage on Nov 12, 2026.
+    </p>
+
+    <p>
+        <a href="https://www.youtube.com/playlist?list=PLH9qAzCgaCgs">
+        https://www.youtube.com/playlist?list=PLH9qAzCgaCgs</a>
+    </p>
+
+    <h2 id="prologue">Prologue</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=J8wbL88f4gI">"Well, the
+            network’s down."</a> (Ameritech Data ad)<br /> 
+            "Bagel?"
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=4lzqUe1Qfec">Wake Up</a> (Rage
+            Against the Machine)<br /> 
+            The pager goes off at 2 a.m. Six minutes long, because snooze is not an
+            option.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=6cQo8YFH__Y">Production</a>
+            (The Wiseguys)<br /> 
+            "Which environment?"
+        </p></li>
+    </ul>
+
+    <h2 id="denial">Denial</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=ojvldIzbaMo">Enjoy the
+            Silence</a> (Depeche Mode)<br /> 
+            The dashboards are quiet. Too quiet.  (Monitoring is down too.)
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=vyut3GyQtn0">Breathe</a>
+            (Télépopmusik)<br /> 
+            "It’s probably just DNS propagation. Everybody breathe."
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=3J2fkABpwBA">drama free (feat.
+            Lights)</a> (deadmau5)<br /> 
+            Status page still says "All Systems Operational."
+        </p></li>
+    </ul>
+
+    <h2 id="anger">Anger</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=AEyhEJdqyrw">F**k the
+            System</a> (System of a Down)<br /> 
+            The whole system. All of it.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=Q4y4TsJHgVU">Burn It Down</a>
+            (AWOLNATION)<br /> 
+            Someone in the war room proposes nuking the cluster from orbit.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=-5tHiZACxbI">Timebomb Zone</a>
+            (The Prodigy)<br /> 
+            "But nobody’s touched this code since 2014!"
+        </p></li>
+    </ul>
+
+    <h2 id="bargaining">Bargaining</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=snILjFUkk_A">Never Let Me Down
+            Again</a> (Depeche Mode)<br /> 
+            Pleading with the failover cluster. And the backups.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=9SSUQxGjZZ4">Voodoo</a>
+            (Godsmack)<br /> 
+            Clear the caches, restart the services, sacrifice a chicken.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=ooc8QR2WleM">Techno Shaman</a>
+            (Ummet Ozcan)<br /> 
+            Summon the one engineer who still understands the legacy stack.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=PthnTuzKU3o">Move Any
+            Mountain</a> (The Shamen)<br /> 
+            Promise the vendor anything: a multi-year renewal, a case study, your
+            firstborn.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=whbXCC33Pwc">Cthulhu
+            Sleeps</a> (deadmau5)<br /> 
+            The ancient mainframe in the basement. Do <em>not</em> wake it. (Ten
+            and a half minutes of dread.)
+        </p></li>
+    </ul>
+
+    <h2 id="depression">Depression</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=jag_5JCq-lY">Stress in a
+            Box</a> (International Thief Thief)<br /> 
+            Hour four of the bridge call.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=zSxlnaF9jf0">nosedive</a>
+            (deadmau5)<br /> 
+            Every graph on the dashboard. Revenue too.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=7tVirVifUJk">Confusion</a>
+            (New Order)<br /> 
+            Fourteen people on the bridge, fourteen theories.
+        </p></li>
+    </ul>
+
+    <h2 id="acceptance">Acceptance</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=dg01iQ3xZtE">Race
+            Condition</a> (Stereo Drift)<br /> 
+            On occasion, it’s actually <em>not</em> DNS!
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=Z0GFRcFm-aY">It’s the End of
+            the World as We Know It</a> (R.E.M.)<br /> 
+            ...and I feel fine. Ship it!
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=2twY8YQYDBE">(Nothing But)
+            Flowers</a> (Talking Heads)<br /> 
+            Life after the collapse, missing the old monolith.
+        </p></li>
+    </ul>
+
+    <h2 id="epilogue">Epilogue</h2>
+
+    <ul>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=9_gkpYORQLU">G.O.A.T.</a>
+            (Polyphia)<br /> 
+            Kudos in the incident channel for whoever found it.
+        </p></li>
+        <li><p>
+            <a href="https://www.youtube.com/watch?v=c1Eeu0lsozc">The Game Has
+            Changed</a> (Daft Punk)<br />
+            The postmortem. New architecture, new runbooks.
+        </p></li>
+    </ul>
+
+</body>
+</html>

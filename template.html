@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$title$</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style>
+        /* dark-mode style embedded to avoid blinding FOUC */
+        @media (prefers-color-scheme: dark) {
+            html {
+                background-color: black;
+            }
+            body {
+                filter: invert(90%) brightness(75%);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>$title$</h1>
+<blockquote>$description$</blockquote>
+$body$
+</body>
+</html>
